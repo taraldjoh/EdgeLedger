@@ -21,17 +21,19 @@
       media="screen and (min-width 1100px)"
       href="css/widescreen.css"
     /> -->
-    
 
     <title>EdgeLedger Financial | Accounting & Investment</title>
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav id="navbar">
-      <h1 class="logo">
-        <span class="text-primary"> <i class="fas fa-book-open"></i> Edge </span
-        >Ledger
-      </h1>
+    <nav id="navbar" class="bg-darker">
+      <a href="#home">
+        <h1 class="logo">
+          <span class="text-primary">
+            <i class="fas fa-book-open"></i> Edge </span
+          >Ledger
+        </h1>
+      </a>
       <ul>
         <li><a href="#home">Hjem</a></li>
         <li><a href="#what">Tjenester</a></li>
@@ -42,7 +44,7 @@
     </nav>
 
     <!-- Header: Showcase -->
-    
+
     <header id="showcase">
       <div class="showcase-content">
         <h1 class="l-heading">The Sky Is The Limit</h1>
@@ -54,36 +56,45 @@
       </div>
     </header>
 
-    <!-- Section: What We Do -->
-    <section id="what" class="bg-light py-1">
+    <!-- Section: Tjenester/What -->
+    <section id="what" class="bg-light py-2">
       <div class="container">
-        <h2 class="m-heading text-center"><span class="text-primary">Hva</span> Vi Gjør</h2>
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Våre</span> Tjenester
+        </h2>
         <div class="items">
-          <div class="item"><i class="fas fa-university fa-2x"></i>
+          <a class="item" href="#contact">
+            <i class="fas fa-university fa-2x"></i>
             <div>
-              <h3>Investeringsbank</h3>
+              <h3>Investering</h3>
               <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              ad?
-            </p></div>
-            </div> 
-          <div class="item"><i class="fas fa-book-reader fa-2x"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                ad?
+              </p>
+            </div>
+          </a>
+
+          <a class="item" href="#contact">
+            <i class="fas fa-book-reader fa-2x"></i>
             <div>
               <h3>Porteføljeforvalting</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
                 ad?
-              </p></div>
+              </p>
             </div>
-          <div class="item"><i class="fas fa-pencil-alt fa-2x"></i>
-              <div>
-                <h3>Skatt & Regnskap</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-                  ad?
-                </p>
-              </div>
+          </a>
+
+          <a class="item" href="#contact">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div>
+              <h3>Skatt & Regnskap</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                ad?
+              </p>
             </div>
+          </a>
         </div>
       </div>
     </section>
@@ -92,85 +103,110 @@
     <section id="who">
       <div class="who-img"></div>
       <div class="who-text bg-dark p-2">
-        <h2 class="m-heading"><span class="text-primary">Hvem</span> Vi Er </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quae nobis et in amet ex rem sint a tempora voluptas eveniet quo illo dolore tenetur sequi adipisci, non fugit.</p>
-        <h3>Vårt Team </h3>
+        <h2 class="m-heading">Om Oss</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga
+          quae nobis et in amet ex rem sint a tempora voluptas eveniet quo illo
+          dolore tenetur sequi adipisci, non fugit.
+        </p>
+        <h3>Vårt Team</h3>
         <ul class="list">
           <li>Mark Smith: CEO</li>
           <li>Shannon Johnson: CFO</li>
           <li>John Corbit: Lead Accountant</li>
           <li>Janet Williams: Investment Manager</li>
           <li>Kara Jackson: Senior Accountant</li>
-          <li>Eivind Bakke: Beta Male</li>
         </ul>
       </div>
     </section>
 
     <!-- Section: Clients -->
-    <section id="clients" class="py-1">
+    <section id="clients" class="py-3">
       <div class="container">
         <h2 class="m-heading text-center">
           <span class="text-primary">Våre</span> Klienter
         </h2>
         <div class="items py-1">
-          <div><img src="./img/logos/logo1.png" alt="Client"></div>
-          <div><img src="./img/logos/logo2.png" alt="Client"></div>
-          <div><img src="./img/logos/logo3.png" alt="Client"></div>
-          <div><img src="./img/logos/logo4.png" alt="Client"></div>
-          <div><img src="./img/logos/logo5.png" alt="Client"></div>
+          <div><img src="./img/logos/logo1.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo2.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo3.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo4.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo5.png" alt="Client" /></div>
         </div>
       </div>
     </section>
 
     <!-- Section: Contact -->
     <section id="contact">
-      <div class="contact-form bg-primary p-2">
-        <h2 class="m-heading">Kontakt Oss</h2>
+      <div class="contact-form bg-dark p-2">
+        <h2 class="m-heading"><span class="text-primary">Kontakt</span> Oss</h2>
         <p>Vennligst fyll ut skjemaet under for å kontakte oss!</p>
-        <form >
+        <form>
           <div class="form-group">
             <label for="name">Navn</label>
-            <input type="text" name="name" id="name" placeholder="Skriv ditt navn">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Skriv ditt navn"
+            />
           </div>
           <div class="form-group">
             <label for="email">E-post</label>
-            <input type="email" name="email" id="email" placeholder="Skriv din e-post">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Skriv din e-post"
+            />
           </div>
           <div class="form-group">
             <label for="phone">Telefonnummer</label>
-            <input type="text" name="phone" id="phone" placeholder="Skriv ditt telefonnummer">
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Skriv ditt telefonnummer"
+            />
           </div>
           <div class="form-group">
             <label for="message">Melding</label>
-            <textarea name="message" id="message" placeholder="Skriv din melding"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Skriv din melding"
+            ></textarea>
           </div>
-          <input type="submit" value="Send" class="btn btn-dark">
+          <input type="submit" value="Send" class="btn" />
         </form>
       </div>
       <div class="map"></div>
     </section>
 
     <!-- Footer -->
-    <footer id="main-footer" class="bg-dark text-center py-1">
+    <footer id="main-footer" class="bg-darker text-center py-1">
       <div class="container">
-          <p>Copyright &copy; 2019, EdgeLedger, All Rights Reserved</p>
+        <p>Copyright &copy; 2019, EdgeLedger, All Rights Reserved</p>
       </div>
     </footer>
 
     <!-- JQuery CDN -->
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Local JS File -->
     <script src="./js/main.js"></script>
 
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1sX4lPvGy6B4fF3DwM-8CC8MPkg-bfNs&callback=initMap"
-    async defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1sX4lPvGy6B4fF3DwM-8CC8MPkg-bfNs&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
-
 
 <!-- AIzaSyA1sX4lPvGy6B4fF3DwM-8CC8MPkg-bfNs -->

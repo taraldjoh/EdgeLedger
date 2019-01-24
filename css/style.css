@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 p {
@@ -32,7 +33,7 @@ p {
 }
 
 .text-primary {
-  color: #93cb52;
+  color: #475fe9;
 }
 
 .l-heading {
@@ -55,15 +56,15 @@ p {
 .btn {
   display: inline-block;
   color: #fff;
-  background: #93cb52;
+  background: #475fe9;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
 }
 
 .btn:hover {
-  background: #7ab436;
-  transition: .5s;
+  background: #2c41b8;
+  transition: 0.5s;
 }
 
 .btn-dark {
@@ -72,7 +73,7 @@ p {
 }
 
 .bg-light {
-  background: #f4f4f4;
+  background: #fcf7f7;
   color: #333;
 }
 
@@ -81,17 +82,34 @@ p {
   color: #fff;
 }
 
-.bg-primary {
-  background: #93cb52;
+.bg-darker {
+  background: rgb(37, 37, 37);
   color: #fff;
 }
-.py-1 { padding: 1.5rem 0;}
-.py-2 { padding: 2rem 0;}
-.py-3 { padding: 3rem 0;}
 
-.p-1 { padding: 1.5rem;}
-.p-2 { padding: 2rem;}
-.p-3 { padding: 3rem;}
+.bg-primary {
+  background: #475fe9;
+  color: #fff;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 
 .list {
   margin: 0.5rem 0;
@@ -112,8 +130,6 @@ p {
   display: flex;
   position: sticky;
   top: 0;
-  background: #333;
-  color: #fff;
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
@@ -132,9 +148,9 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: #93cb52;
+  background: #2c41b8;
   border-radius: 5px;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 /* Showcase */
@@ -169,17 +185,30 @@ p {
   padding: 1rem;
 }
 
+#what .items .item:hover {
+  border-left: rgba(68, 68, 68, 0.212) dotted 0.5px;
+  border-right: rgba(68, 68, 68, 0.212) dotted 0.5px;
+  transform: scale(1.1);
+}
+
 #what .items .item {
   flex: 1;
   text-align: center;
-  padding: 1 rem;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 #what .items .item i {
-  background: #93cb52;
+  background: #475fe9;
+  color: #fff;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+#what .items .item h3,
+#what .items .item p {
+  color: #444;
 }
 
 /* Section: Who We Are */
@@ -204,6 +233,11 @@ p {
   display: block;
   margin: auto;
   width: 60%;
+  transition: all 0.2s ease-in-out;
+}
+
+#clients .items img:hover {
+  transform: scale(1.1);
 }
 
 /* Section: Contact */
@@ -211,8 +245,9 @@ p {
   display: flex;
 }
 
-#contact .map, #contact .contact-form {
-  flex:1 ;
+#contact .map,
+#contact .contact-form {
+  flex: 1;
 }
 
 #contact .contact-form .form-group {
